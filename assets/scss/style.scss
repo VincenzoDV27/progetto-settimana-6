@@ -15,6 +15,11 @@ $color-text: $color-primary; // COLORE TESTO
 $shadow-card: 0 2px 6px rgba(0, 0, 0, 0.08); // BOX SHADOW CARD
 $shadow-card-hover: 0 10px 24px rgba(0, 0, 0, 0.12); // BOX SHADOW CARD HOVER
 
+// DARK MODE
+$dark-bg: #121212;
+$dark-card: #1f1f1f;
+$dark-text: #f0f0f0;
+
 // Navbar
 
 .navbar {
@@ -40,6 +45,20 @@ $shadow-card-hover: 0 10px 24px rgba(0, 0, 0, 0.12); // BOX SHADOW CARD HOVER
   .navbar-toggler:focus {
     box-shadow: none;
     outline: none;
+  }
+
+  #themeToggle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-color: white;
+    color: white;
+    padding: 0;
+  }
+
+  #themeToggle:hover {
+    background-color: white;
+    color: $color-dark;
   }
 }
 
@@ -198,4 +217,58 @@ footer {
     margin-top: 25px;
     padding-top: 15px;
   }
+}
+
+// Dark Mode
+
+.dark-mode {
+  background-color: $dark-bg;
+  color: $dark-text;
+
+  #servizi {
+    background-color: $dark-bg;
+
+    h2,
+    .card-title {
+      color: $dark-text;
+    }
+
+    .card {
+      background-color: $dark-card;
+      color: $dark-text;
+    }
+
+    .card-text {
+      color: $dark-text;
+    }
+  }
+
+  #contatti {
+    background-color: $dark-bg;
+
+    h2,
+    p,
+    .form-label {
+      color: $dark-text;
+    }
+
+    .form-control,
+    .form-select {
+      background-color: $dark-card;
+      color: $dark-text;
+      border-color: #555;
+    }
+  }
+}
+
+body,
+#servizi,
+#contatti,
+.card,
+.form-control,
+.form-select {
+  transition:
+    background-color 0.4s ease,
+    color 0.4s ease,
+    border-color 0.4s ease;
 }

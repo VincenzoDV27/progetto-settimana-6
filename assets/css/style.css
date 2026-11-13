@@ -18,6 +18,18 @@
   box-shadow: none;
   outline: none;
 }
+.navbar #themeToggle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-color: white;
+  color: white;
+  padding: 0;
+}
+.navbar #themeToggle:hover {
+  background-color: white;
+  color: hsl(20, 20%, 15%);
+}
 
 .hero {
   min-height: 80vh;
@@ -139,6 +151,48 @@ footer .footer-bottom {
   text-align: center;
   margin-top: 25px;
   padding-top: 15px;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+.dark-mode #servizi {
+  background-color: #121212;
+}
+.dark-mode #servizi h2,
+.dark-mode #servizi .card-title {
+  color: #f0f0f0;
+}
+.dark-mode #servizi .card {
+  background-color: #1f1f1f;
+  color: #f0f0f0;
+}
+.dark-mode #servizi .card-text {
+  color: #f0f0f0;
+}
+.dark-mode #contatti {
+  background-color: #121212;
+}
+.dark-mode #contatti h2,
+.dark-mode #contatti p,
+.dark-mode #contatti .form-label {
+  color: #f0f0f0;
+}
+.dark-mode #contatti .form-control,
+.dark-mode #contatti .form-select {
+  background-color: #1f1f1f;
+  color: #f0f0f0;
+  border-color: #555;
+}
+
+body,
+#servizi,
+#contatti,
+.card,
+.form-control,
+.form-select {
+  transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
 }
 
 /*# sourceMappingURL=style.css.map */
