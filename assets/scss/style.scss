@@ -1,0 +1,201 @@
+// COLORI
+$color-primary: hsl(
+  20,
+  30%,
+  35%
+); // BUTTON, COLORE TESTO, SFONDO PRINCIPALE, SFONDO HERO
+$color-primary-hover: hsl(20, 30%, 27%); // BUTTON HOVER
+$color-dark: hsl(20, 20%, 15%); // SFONDO NAV, SFONDO FOOTER
+$color-light: hsl(40, 30%, 90%); // LINK FOOTER HOVER
+
+// TESTI
+$color-text: $color-primary; // COLORE TESTO
+
+// OMBRE
+$shadow-card: 0 2px 6px rgba(0, 0, 0, 0.08); // BOX SHADOW CARD
+$shadow-card-hover: 0 10px 24px rgba(0, 0, 0, 0.12); // BOX SHADOW CARD HOVER
+
+// Navbar
+
+.navbar {
+  background-color: $color-dark;
+
+  .navbar-brand {
+    color: white;
+    font-weight: bold;
+  }
+
+  .nav-link {
+    color: white;
+  }
+
+  .nav-link:hover {
+    color: $color-light;
+  }
+
+  .navbar-toggler {
+    border-color: white;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+  }
+}
+
+// Hero
+
+.hero {
+  min-height: 80vh;
+  background-color: $color-primary;
+  color: white;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  p {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    background-color: $color-primary;
+    border-color: $color-primary;
+  }
+
+  .btn:hover {
+    background-color: $color-primary-hover;
+    border-color: $color-primary-hover;
+  }
+}
+
+// Servizi
+
+#servizi {
+  background-color: white;
+
+  h2 {
+    font-weight: bold;
+    color: #1a1a1a;
+  }
+
+  .container p {
+    color: #666;
+  }
+
+  .card {
+    border: none;
+    box-shadow: $shadow-card;
+    transition:
+      transform 0.3s,
+      box-shadow 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: $shadow-card-hover;
+  }
+
+  .card-body {
+    padding: 25px;
+  }
+
+  .card-body .fs-1 {
+    margin-bottom: 8px;
+  }
+
+  .card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1a1a1a;
+  }
+
+  .card-text {
+    font-size: 14px;
+    color: #555;
+  }
+}
+
+// Contatti
+
+#contatti {
+  background-color: #f5f5f5;
+
+  h2 {
+    font-weight: bold;
+    color: #1a1a1a;
+  }
+
+  p {
+    color: #666;
+  }
+
+  .form-container {
+    max-width: 500px;
+  }
+
+  .form-label {
+    font-weight: 500;
+    color: #333;
+  }
+
+  .form-control,
+  .form-select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .form-control:focus,
+  .form-select:focus {
+    border-color: $color-primary;
+    box-shadow: none;
+  }
+
+  .btn {
+    background-color: $color-primary;
+    border-color: $color-primary;
+  }
+
+  .btn:hover {
+    background-color: $color-primary-hover;
+    border-color: $color-primary-hover;
+  }
+}
+
+// Footer
+
+footer {
+  background-color: $color-dark;
+  color: white;
+  font-size: 12px;
+
+  h5 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  p {
+    margin-bottom: 3px;
+  }
+
+  a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 3px;
+  }
+
+  a:hover {
+    color: $color-light;
+  }
+
+  .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 15px;
+  }
+}
